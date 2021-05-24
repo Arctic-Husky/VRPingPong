@@ -146,7 +146,7 @@ GameObject:
   - component: {fileID: 8479309091028857008}
   - component: {fileID: 8366153854313471761}
   m_Layer: 5
-  m_Name: TButton (3)
+  m_Name: 'NButton '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -160,16 +160,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 32469995982752294}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.00002295788}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6961570774380082052}
-  m_Father: {fileID: 733007895816758064}
-  m_RootOrder: 2
+  m_Father: {fileID: 4886176979836551412}
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 19.199951, y: -63}
+  m_AnchoredPosition: {x: 58.399956, y: -185}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &290108699484936162
@@ -251,7 +251,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8479309091028857008}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 873541023638490277}
+        m_MethodName: ApertarTecla
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: N
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &164623712122019745
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,7 +382,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8266729665646620672}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -528,7 +539,7 @@ GameObject:
   - component: {fileID: 1946540569091294294}
   - component: {fileID: 7382165800328344812}
   m_Layer: 5
-  m_Name: TButton (2)
+  m_Name: YButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -633,7 +644,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1946540569091294294}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 873541023638490277}
+        m_MethodName: ApertarTecla
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Y
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &606121119297876120
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,7 +669,7 @@ GameObject:
   - component: {fileID: 3794061112111085278}
   - component: {fileID: 5946647000981477522}
   m_Layer: 5
-  m_Name: WButton (1)
+  m_Name: XButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -661,16 +683,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 606121119297876120}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.000012244203}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2097707687371344915}
-  m_Father: {fileID: 733007895816758064}
-  m_RootOrder: 5
+  m_Father: {fileID: 4886176979836551412}
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -203.80005, y: -63}
+  m_AnchoredPosition: {x: -164.60007, y: -185}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1158969536973930336
@@ -752,7 +774,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3794061112111085278}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 873541023638490277}
+        m_MethodName: ApertarTecla
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: X
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &702597491000048312
 GameObject:
   m_ObjectHideFlags: 0
@@ -1372,7 +1405,7 @@ GameObject:
   - component: {fileID: 7208233799732211823}
   - component: {fileID: 9209788005528747680}
   m_Layer: 5
-  m_Name: QButton (1)
+  m_Name: AButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1478,7 +1511,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 873541023638490277}
         m_MethodName: ApertarTecla
         m_Mode: 5
         m_Arguments:
@@ -1502,7 +1535,7 @@ GameObject:
   - component: {fileID: 2387287634136390049}
   - component: {fileID: 411531478073884872}
   m_Layer: 5
-  m_Name: EButton (2)
+  m_Name: VButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1516,16 +1549,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1779883469264310429}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.00003673261}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7703987359078158615}
-  m_Father: {fileID: 733007895816758064}
-  m_RootOrder: 1
+  m_Father: {fileID: 4886176979836551412}
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -90.80005, y: -63}
+  m_AnchoredPosition: {x: -51.600044, y: -185}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8553495908539290219
@@ -1607,7 +1640,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2387287634136390049}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 873541023638490277}
+        m_MethodName: ApertarTecla
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: V
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1852783211109508873
 GameObject:
   m_ObjectHideFlags: 0
@@ -1621,7 +1665,7 @@ GameObject:
   - component: {fileID: 3923562434637124636}
   - component: {fileID: 6788438293650685917}
   m_Layer: 5
-  m_Name: QButton (5)
+  m_Name: 'BButton '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1635,16 +1679,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1852783211109508873}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.00003137577}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1933407323243164106}
-  m_Father: {fileID: 733007895816758064}
-  m_RootOrder: 3
+  m_Father: {fileID: 4886176979836551412}
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -36, y: -63}
+  m_AnchoredPosition: {x: 3.2000046, y: -185}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4856478840592414369
@@ -1726,7 +1770,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3923562434637124636}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 873541023638490277}
+        m_MethodName: ApertarTecla
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: B
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2426713647220248905
 GameObject:
   m_ObjectHideFlags: 0
@@ -1873,7 +1928,7 @@ GameObject:
   - component: {fileID: 5445962784772501909}
   - component: {fileID: 8094992966173878710}
   m_Layer: 5
-  m_Name: RButton (2)
+  m_Name: CButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1891,12 +1946,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5906221288432070532}
-  m_Father: {fileID: 733007895816758064}
-  m_RootOrder: 7
+  m_Father: {fileID: 4886176979836551412}
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -146, y: -63}
+  m_AnchoredPosition: {x: -106.799995, y: -185}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5949198556777841046
@@ -1978,7 +2033,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5445962784772501909}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 873541023638490277}
+        m_MethodName: ApertarTecla
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: C
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2497102481823146660
 GameObject:
   m_ObjectHideFlags: 0
@@ -2123,6 +2189,7 @@ GameObject:
   - component: {fileID: 5797037186256123776}
   - component: {fileID: 1009209176191055907}
   - component: {fileID: 873541023638490277}
+  - component: {fileID: 839624924409618136}
   m_Layer: 0
   m_Name: PlayerChatObject
   m_TagString: Untagged
@@ -2179,6 +2246,19 @@ MonoBehaviour:
   chatUI: {fileID: 4734434930471891525}
   chatText: {fileID: 158959458929103723}
   inputField: {fileID: 6501570016080530925}
+--- !u!114 &839624924409618136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2728822439663863104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2bd3dca18dd09c4a95cf62877ab960f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuBox: {fileID: 6885839381363111889, guid: 95301d4fc3d5a404280b7521c4901038, type: 3}
 --- !u!1 &2759317231255892715
 GameObject:
   m_ObjectHideFlags: 0
@@ -2192,7 +2272,7 @@ GameObject:
   - component: {fileID: 6734316250236331245}
   - component: {fileID: 1305685294783319288}
   m_Layer: 5
-  m_Name: QButton (6)
+  m_Name: 'JButton '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2211,7 +2291,7 @@ RectTransform:
   m_Children:
   - {fileID: 2308132064807429434}
   m_Father: {fileID: 4886176979836551412}
-  m_RootOrder: 17
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2297,7 +2377,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6734316250236331245}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 873541023638490277}
+        m_MethodName: ApertarTecla
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: J
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2909688934231814571
 GameObject:
   m_ObjectHideFlags: 0
@@ -2311,7 +2402,7 @@ GameObject:
   - component: {fileID: 18301704722539311}
   - component: {fileID: 1575090531347048209}
   m_Layer: 5
-  m_Name: RButton (2)
+  m_Name: DButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2416,7 +2507,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 18301704722539311}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 873541023638490277}
+        m_MethodName: ApertarTecla
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: D
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3210160600036173586
 GameObject:
   m_ObjectHideFlags: 0
@@ -2563,7 +2665,7 @@ GameObject:
   - component: {fileID: 2345909733932859089}
   - component: {fileID: 862129194731342432}
   m_Layer: 5
-  m_Name: QButton (6)
+  m_Name: MButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2577,16 +2679,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3243918936709079738}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.000024488407}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 178391301614604665}
-  m_Father: {fileID: 733007895816758064}
-  m_RootOrder: 4
+  m_Father: {fileID: 4886176979836551412}
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 77, y: -63}
+  m_AnchoredPosition: {x: 116.200005, y: -185}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9152191409902463261
@@ -2668,7 +2770,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2345909733932859089}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 873541023638490277}
+        m_MethodName: ApertarTecla
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: M
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3660129589339056929
 GameObject:
   m_ObjectHideFlags: 0
@@ -2682,7 +2795,7 @@ GameObject:
   - component: {fileID: 7710347720189395276}
   - component: {fileID: 1050969708086184675}
   m_Layer: 5
-  m_Name: QButton (1)
+  m_Name: ZButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2700,12 +2813,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4890063451272488491}
-  m_Father: {fileID: 733007895816758064}
-  m_RootOrder: 6
+  m_Father: {fileID: 4886176979836551412}
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -259, y: -63}
+  m_AnchoredPosition: {x: -219.79999, y: -185}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8540167988529855286
@@ -2787,7 +2900,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7710347720189395276}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 873541023638490277}
+        m_MethodName: ApertarTecla
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Z
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3750184025434912545
 GameObject:
   m_ObjectHideFlags: 0
@@ -2934,7 +3058,7 @@ GameObject:
   - component: {fileID: 9037360603880914935}
   - component: {fileID: 7364575833329332259}
   m_Layer: 5
-  m_Name: WButton (3)
+  m_Name: IButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3039,7 +3163,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 9037360603880914935}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 873541023638490277}
+        m_MethodName: ApertarTecla
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: I
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4173370943972560416
 GameObject:
   m_ObjectHideFlags: 0
@@ -3053,7 +3188,7 @@ GameObject:
   - component: {fileID: 6042535579684281621}
   - component: {fileID: 2433337045218163902}
   m_Layer: 5
-  m_Name: WButton (6)
+  m_Name: "\xC7Button "
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3072,7 +3207,7 @@ RectTransform:
   m_Children:
   - {fileID: 2574971947887997360}
   m_Father: {fileID: 4886176979836551412}
-  m_RootOrder: 18
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3158,7 +3293,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6042535579684281621}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 873541023638490277}
+        m_MethodName: ApertarTecla
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\xC7"
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4232981239039515849
 GameObject:
   m_ObjectHideFlags: 0
@@ -3172,7 +3318,7 @@ GameObject:
   - component: {fileID: 8699746697859801974}
   - component: {fileID: 3879575379229525321}
   m_Layer: 5
-  m_Name: QButton (4)
+  m_Name: OButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3277,7 +3423,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8699746697859801974}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 873541023638490277}
+        m_MethodName: ApertarTecla
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: O
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4412168592809989150
 GameObject:
   m_ObjectHideFlags: 0
@@ -3310,7 +3467,7 @@ RectTransform:
   m_Children:
   - {fileID: 1489241030301584652}
   m_Father: {fileID: 4886176979836551412}
-  m_RootOrder: 20
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3397,7 +3554,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 873541023638490277}
         m_MethodName: Send
         m_Mode: 5
         m_Arguments:
@@ -3689,7 +3846,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &234345788579439064
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3698,7 +3855,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4734434930471891525}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -21841.688}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3074279804123592880}
@@ -3711,7 +3868,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8167.761, y: -36493.16}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4956034613074516902
@@ -3727,7 +3884,7 @@ GameObject:
   - component: {fileID: 1708400323291073488}
   - component: {fileID: 7676972937420559989}
   m_Layer: 5
-  m_Name: EButton (2)
+  m_Name: FButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3832,7 +3989,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1708400323291073488}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 873541023638490277}
+        m_MethodName: ApertarTecla
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: F
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5083944781293057191
 GameObject:
   m_ObjectHideFlags: 0
@@ -3979,7 +4147,7 @@ GameObject:
   - component: {fileID: 4598473723002797560}
   - component: {fileID: 8409771636131714099}
   m_Layer: 5
-  m_Name: TButton (3)
+  m_Name: HButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3997,15 +4165,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2882501817496599795}
-  - {fileID: 6041029839402303548}
-  - {fileID: 6032561741856581936}
-  - {fileID: 709496878083938022}
-  - {fileID: 4584173986232632464}
-  - {fileID: 1353336848160459558}
-  - {fileID: 7196917220365680209}
-  - {fileID: 8490967917004965074}
   m_Father: {fileID: 4886176979836551412}
-  m_RootOrder: 15
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4091,7 +4252,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4598473723002797560}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 873541023638490277}
+        m_MethodName: ApertarTecla
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: H
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5164541680617342825
 GameObject:
   m_ObjectHideFlags: 0
@@ -4903,7 +5075,7 @@ GameObject:
   - component: {fileID: 6706725007515920255}
   - component: {fileID: 4849247236422407933}
   m_Layer: 5
-  m_Name: QButton (2)
+  m_Name: TButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5008,7 +5180,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6706725007515920255}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 873541023638490277}
+        m_MethodName: ApertarTecla
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: T
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5940894522908678798
 GameObject:
   m_ObjectHideFlags: 0
@@ -5526,7 +5709,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5327160925171656749}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 873541023638490277}
+        m_MethodName: ApertarTecla
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: W
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6328798434855520174
 GameObject:
   m_ObjectHideFlags: 0
@@ -5645,7 +5839,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7791055269878035569}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 873541023638490277}
+        m_MethodName: ApertarTecla
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Q
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6436204878796309283
 GameObject:
   m_ObjectHideFlags: 0
@@ -6437,7 +6642,7 @@ GameObject:
   - component: {fileID: 6460055999141662557}
   - component: {fileID: 899685135180433024}
   m_Layer: 5
-  m_Name: WButton (1)
+  m_Name: SButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6542,7 +6747,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6460055999141662557}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 873541023638490277}
+        m_MethodName: ApertarTecla
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: S
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6713071941481897461
 GameObject:
   m_ObjectHideFlags: 0
@@ -6955,7 +7171,7 @@ GameObject:
   - component: {fileID: 1445864984889945559}
   - component: {fileID: 569126025775193754}
   m_Layer: 5
-  m_Name: QButton (3)
+  m_Name: UButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7060,7 +7276,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1445864984889945559}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 873541023638490277}
+        m_MethodName: ApertarTecla
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: U
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6949815839193488547
 GameObject:
   m_ObjectHideFlags: 0
@@ -7074,7 +7301,7 @@ GameObject:
   - component: {fileID: 8715086317371588790}
   - component: {fileID: 1954877138214659764}
   m_Layer: 5
-  m_Name: WButton (5)
+  m_Name: KButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7179,7 +7406,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8715086317371588790}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 873541023638490277}
+        m_MethodName: ApertarTecla
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: K
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7309745129689474692
 GameObject:
   m_ObjectHideFlags: 0
@@ -7326,7 +7564,7 @@ GameObject:
   - component: {fileID: 265311470472754543}
   - component: {fileID: 2835780163001471307}
   m_Layer: 5
-  m_Name: QButton (5)
+  m_Name: GButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7345,7 +7583,7 @@ RectTransform:
   m_Children:
   - {fileID: 7320720016511551437}
   m_Father: {fileID: 4886176979836551412}
-  m_RootOrder: 16
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7431,7 +7669,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 265311470472754543}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 873541023638490277}
+        m_MethodName: ApertarTecla
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: G
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7595881311838546326
 GameObject:
   m_ObjectHideFlags: 0
@@ -7445,7 +7694,7 @@ GameObject:
   - component: {fileID: 8509316622970632768}
   - component: {fileID: 6792694042966325491}
   m_Layer: 5
-  m_Name: QButton (7)
+  m_Name: LButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7464,7 +7713,7 @@ RectTransform:
   m_Children:
   - {fileID: 8316249628955569066}
   m_Father: {fileID: 4886176979836551412}
-  m_RootOrder: 19
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7550,7 +7799,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8509316622970632768}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 873541023638490277}
+        m_MethodName: ApertarTecla
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: L
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7897510228270868796
 GameObject:
   m_ObjectHideFlags: 0
@@ -7564,7 +7824,7 @@ GameObject:
   - component: {fileID: 1486757211964280274}
   - component: {fileID: 1977800762210414043}
   m_Layer: 5
-  m_Name: RButton (1)
+  m_Name: EButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7669,7 +7929,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1486757211964280274}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 873541023638490277}
+        m_MethodName: ApertarTecla
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: E
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8191521437120178921
 GameObject:
   m_ObjectHideFlags: 0
@@ -7683,7 +7954,7 @@ GameObject:
   - component: {fileID: 1093620048110267890}
   - component: {fileID: 3158529760149793274}
   m_Layer: 5
-  m_Name: WButton (4)
+  m_Name: 'PButton '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7788,7 +8059,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1093620048110267890}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 873541023638490277}
+        m_MethodName: ApertarTecla
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: P
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8266729665646620672
 GameObject:
   m_ObjectHideFlags: 0
@@ -7802,13 +8084,14 @@ GameObject:
   - component: {fileID: 6097728763186650857}
   - component: {fileID: 113975690301784591}
   - component: {fileID: 2471840250362854264}
+  - component: {fileID: 8540611294480306053}
   m_Layer: 5
   m_Name: CanvasPlayerChat
-  m_TagString: Untagged
+  m_TagString: Chat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1753938298056306029
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7816,17 +8099,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8266729665646620672}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 0.45500693, z: -0, w: 0.8904879}
+  m_LocalPosition: {x: 0, y: 0, z: 4.69}
+  m_LocalScale: {x: 0.0054696505, y: 0.0054696505, z: 0.0054696505}
   m_Children:
   - {fileID: 234345788579439064}
   m_Father: {fileID: 5797037186256123776}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 54.131004, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 441, y: 248}
+  m_AnchoredPosition: {x: 3.98, y: 1.43}
   m_SizeDelta: {x: 882, y: 496}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &4423904523533101559
@@ -7839,8 +8122,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 5383272912473564234, guid: 29e8563bcf5c78347bba15ad8214c74c,
-    type: 3}
+  m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -7908,6 +8190,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 2147483647
+--- !u!114 &8540611294480306053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8266729665646620672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbe315e6810924d48bf4fdfe4b803276, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 0}
 --- !u!1 &8401222613638122214
 GameObject:
   m_ObjectHideFlags: 0
@@ -7950,6 +8245,13 @@ RectTransform:
   - {fileID: 4933946725497648621}
   - {fileID: 9196224122588679397}
   - {fileID: 7249999501929885281}
+  - {fileID: 6041029839402303548}
+  - {fileID: 6032561741856581936}
+  - {fileID: 709496878083938022}
+  - {fileID: 4584173986232632464}
+  - {fileID: 1353336848160459558}
+  - {fileID: 7196917220365680209}
+  - {fileID: 8490967917004965074}
   - {fileID: 733007895816758064}
   - {fileID: 5320668106595449413}
   - {fileID: 8537093858367610112}
@@ -7978,7 +8280,7 @@ GameObject:
   - component: {fileID: 2971712395183137889}
   - component: {fileID: 6223272042060934616}
   m_Layer: 5
-  m_Name: EButton (1)
+  m_Name: 'RButton '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8083,7 +8385,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2971712395183137889}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 873541023638490277}
+        m_MethodName: ApertarTecla
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: R
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8994152585393079434
 GameObject:
   m_ObjectHideFlags: 0
@@ -8496,7 +8809,7 @@ GameObject:
   - component: {fileID: 283523277047718645}
   - component: {fileID: 5179652710086725662}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: 'SpaceButton '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8515,7 +8828,7 @@ RectTransform:
   m_Children:
   - {fileID: 8776361958086585241}
   m_Father: {fileID: 4886176979836551412}
-  m_RootOrder: 21
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8601,4 +8914,15 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 283523277047718645}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 873541023638490277}
+        m_MethodName: ApertarTecla
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ' '
+          m_BoolArgument: 0
+        m_CallState: 2

@@ -43,10 +43,6 @@ public class ChatBoxVRNetwork : NetworkBehaviour
     [Client]
     public void Send(string message)
     {
-        if (!Input.GetKeyDown(KeyCode.Return))
-        {
-            return;
-        }
         if (string.IsNullOrWhiteSpace(message))
         {
             return;
