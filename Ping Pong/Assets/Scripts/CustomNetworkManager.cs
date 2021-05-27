@@ -6,179 +6,43 @@ using System;
 using System.Linq;
 using UnityEngine.SceneManagement;
 
-public class CustomNetworkManager : NetworkManager
-{
-    [SerializeField] private int minPlayers = 2;
-    [Scene] [SerializeField] private string menuScene = string.Empty;
 
-    [Header("Maps")]
-    [SerializeField] private int numberOfRounds = 1;
-    [SerializeField] private MapSet mapSet = null;
-
-    [Header("Room")]
-    [SerializeField] private NetworkRoomPlayerLobby roomPlayerPrefab = null;
-
-    [Header("Game")]
-    [SerializeField] private GameObject gamePlayerPrefab = null;
-    [SerializeField] private GameObject playerSpawnSystem = null;
-    [SerializeField] private GameObject roundSystem = null;
-
-    private MapHandler mapHandler;
-
-    public static event Action OnClientConnected;
-    public static event Action OnClientDisconnected;
-    public static event Action<NetworkConnection> OnServerReadied;
-    public static event Action OnServerStopped;
-
-    public List<NetworkRoomPlayerLobby> RoomPlayers { get; } = new List<NetworkRoomPlayerLobby>();
-    public List<NetworkGamePlayerLobby> GamePlayers { get; } = new List<NetworkGamePlayerLobby>();
-
-    public override void OnStartServer() => spawnPrefabs = Resources.LoadAll<GameObject>("SpawnablePrefabs").ToList();
-
-    public override void OnStartClient()
+    public class CustomNetworkManager : NetworkManager
     {
-        var spawnablePrefabs = Resources.LoadAll<GameObject>("SpawnablePrefabs");
-
-        foreach (var prefab in spawnablePrefabs)
-        {
-            ClientScene.RegisterPrefab(prefab);
-        }
-    }
-
-    public override void OnClientConnect(NetworkConnection conn)
-    {
-        base.OnClientConnect(conn);
-
-        OnClientConnected?.Invoke();
-    }
-
-    public override void OnClientDisconnect(NetworkConnection conn)
-    {
-        base.OnClientDisconnect(conn);
-
-        OnClientDisconnected?.Invoke();
-    }
-
-    public override void OnServerConnect(NetworkConnection conn)
-    {
-        if (numPlayers >= maxConnections)
-        {
-            conn.Disconnect();
-            return;
-        }
-
-        if (SceneManager.GetActiveScene().name != menuScene)
-        {
-            conn.Disconnect();
-            return;
-        }
-    }
+        public Transform leftRacketSpawn;
+        public Transform rightRacketSpawn;
+    public Transform spawnPosition;
+    public Transform XRRig;
+    //GameObject XRRig;
+    GameObject ball;
 
     public override void OnServerAddPlayer(NetworkConnection conn)
-    {
-        if (SceneManager.GetActiveScene().name == menuScene)
         {
-            bool isLeader = RoomPlayers.Count == 0;
+            // add player at correct spawn position
+            Transform start = numPlayers == 0 ? leftRacketSpawn : rightRacketSpawn;
+            GameObject player = Instantiate(playerPrefab, start.position, start.rotation);
+            //GameObject xrRig = Instantiate(XRRig, start.position, start.rotation);
+            NetworkServer.AddPlayerForConnection(conn, player);
+            //NetworkServer.AddPlayerForConnection(conn, xrRig);
 
-            NetworkRoomPlayerLobby roomPlayerInstance = Instantiate(roomPlayerPrefab);
+         //spawn ball if two players
+        if (numPlayers == 2)
+        {
+            XRRig.position = spawnPosition.position;
+            XRRig.rotation = spawnPosition.rotation;
+        }
+        
+    }
 
-            //roomPlayerInstance.IsLeader = isLeader;
+        public override void OnServerDisconnect(NetworkConnection conn)
+        {
+            // destroy ball
+            if (ball != null)
+                NetworkServer.Destroy(ball);
 
-            NetworkServer.AddPlayerForConnection(conn, roomPlayerInstance.gameObject);
+            // call base functionality (actually destroys the player)
+            base.OnServerDisconnect(conn);
         }
     }
 
-    public override void OnServerDisconnect(NetworkConnection conn)
-    {
-        if (conn.identity != null)
-        {
-            var player = conn.identity.GetComponent<NetworkRoomPlayerLobby>();
-
-            RoomPlayers.Remove(player);
-
-            NotifyPlayersOfReadyState();
-        }
-
-        base.OnServerDisconnect(conn);
-    }
-
-    public override void OnStopServer()
-    {
-        OnServerStopped?.Invoke();
-
-        RoomPlayers.Clear();
-        GamePlayers.Clear();
-    }
-
-    public void NotifyPlayersOfReadyState()
-    {
-        foreach (var player in RoomPlayers)
-        {
-            //player.HandleReadyToStart(IsReadyToStart());
-        }
-    }
-
-    private bool IsReadyToStart()
-    {
-        if (numPlayers < minPlayers) { return false; }
-
-        foreach (var player in RoomPlayers)
-        {
-           // if (!player.IsReady) { return false; }
-        }
-
-        return true;
-    }
-
-    public void StartGame()
-    {
-        if (SceneManager.GetActiveScene().name == menuScene)
-        {
-            if (!IsReadyToStart()) { return; }
-
-            mapHandler = new MapHandler(mapSet, numberOfRounds);
-
-            ServerChangeScene(mapHandler.NextMap);
-        }
-    }
-    
-    public override void ServerChangeScene(string newSceneName)
-    {
-        // From menu to game
-        if (SceneManager.GetActiveScene().name == menuScene && newSceneName.StartsWith("Scene_Map"))
-        {
-            for (int i = RoomPlayers.Count - 1; i >= 0; i--)
-            {
-                var conn = RoomPlayers[i].connectionToClient;
-                var gameplayerInstance = Instantiate(gamePlayerPrefab);
-                //gameplayerInstance.SetDisplayName(RoomPlayers[i].DisplayName);
-
-                NetworkServer.Destroy(conn.identity.gameObject);
-
-                NetworkServer.ReplacePlayerForConnection(conn, gameplayerInstance.gameObject);
-            }
-        }
-
-        base.ServerChangeScene(newSceneName);
-    }
-    
-    public override void OnServerSceneChanged(string sceneName)
-    {
-        if (sceneName.StartsWith("Scene_Map"))
-        {
-            GameObject playerSpawnSystemInstance = Instantiate(playerSpawnSystem);
-            NetworkServer.Spawn(playerSpawnSystemInstance);
-
-            GameObject roundSystemInstance = Instantiate(roundSystem);
-            NetworkServer.Spawn(roundSystemInstance);
-        }
-    }
-
-    public override void OnServerReady(NetworkConnection conn)
-    {
-        base.OnServerReady(conn);
-
-        OnServerReadied?.Invoke(conn);
-    }
-}
 

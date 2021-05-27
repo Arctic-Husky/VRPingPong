@@ -6,6 +6,8 @@ TagManager:
   tags:
   - GameChat
   - Chat
+  - LeftHand
+  - RightHand
   layers:
   - Default
   - TransparentFX
