@@ -18,6 +18,15 @@ public class SpectatorUI : MonoBehaviour
         Instantiate(ballPrefab, new Vector3(Random.Range(-0.6f, 0.6f), 1.5f, Random.Range(2.0f, 4.0f)), Quaternion.identity);
     }
 
+    public void SlowMotion()
+    {
+        if(Time.timeScale == 1.0f){
+            Time.timeScale = 0.3f;}
+
+            else{
+                Time.timeScale = 1.0f;}
+    }
+
     public void ChangeCamera(int camera)
     {
         if (camera==1)
