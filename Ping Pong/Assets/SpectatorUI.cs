@@ -13,6 +13,11 @@ public class SpectatorUI : MonoBehaviour
     [SerializeField] GameObject camera3;
     [SerializeField] GameObject camera4;
 
+    public void SpawnBall(GameObject ballPrefab)
+    {
+        Instantiate(ballPrefab, new Vector3(Random.Range(-0.6f, 0.6f), 1.5f, Random.Range(2.0f, 4.0f)), Quaternion.identity);
+    }
+
     public void ChangeCamera(int camera)
     {
         if (camera==1)
