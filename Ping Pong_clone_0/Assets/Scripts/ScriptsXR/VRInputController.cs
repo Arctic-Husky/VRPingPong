@@ -96,9 +96,17 @@ public class VRInputController : MonoBehaviour
         }
         else
         {
-            spawnedHandModel.SetActive(true);
-            spawnedController.SetActive(false);
-            UpdateHandAnimator();
+            if (spawnedHandModel!=null)
+            {
+                spawnedHandModel.SetActive(true);
+                spawnedController.SetActive(false);
+                UpdateHandAnimator();
+            }
+            else
+            {
+                //print("Controle desconectado");
+            }
+       
         }
     }
 

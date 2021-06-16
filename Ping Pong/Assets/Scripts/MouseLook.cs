@@ -52,10 +52,12 @@ public class MouseLook : MonoBehaviour
 
     public float mouseSensitivity = 100.0f;
     public float clampAngle = 80.0f;
-
+   
     private float rotY = 0.0f; // rotation around the up/y axis
     private float rotX = 0.0f; // rotation around the right/x axis
-
+    [Header("Referencias joystick")]
+    [SerializeField] FixedJoystick joystickMovement;
+    [SerializeField] FixedJoystick joystickLook;
     void Start()
     {
         Vector3 rot = transform.localRotation.eulerAngles;
@@ -65,8 +67,21 @@ public class MouseLook : MonoBehaviour
 
     void Update()
     {
-        float mouseX = Input.GetAxis("Mouse X");
-        float mouseY = -Input.GetAxis("Mouse Y");
+        if (this.gameObject.active)
+        {
+            joystickLook.gameObject.SetActive(true);
+            joystickMovement.gameObject.SetActive(true);
+        }
+        else
+        {
+            joystickLook.gameObject.SetActive(false);
+            joystickMovement.gameObject.SetActive(false);
+        }
+
+
+
+        float mouseX = joystickLook.Horizontal;
+        float mouseY = -joystickLook.Vertical;
 
         rotY += mouseX * mouseSensitivity * Time.deltaTime;
         rotX += mouseY * mouseSensitivity * Time.deltaTime;
@@ -79,25 +94,13 @@ public class MouseLook : MonoBehaviour
 
         var movementSpeed = fastMode ? this.fastMovementSpeed : this.movementSpeed;
 
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
-        {
-            transform.position = transform.position + (-transform.right * movementSpeed * Time.deltaTime);
-        }
+        
+            transform.position = transform.position + (transform.right * joystickMovement.Horizontal * movementSpeed * Time.deltaTime);
+        
 
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-        {
-            transform.position = transform.position + (transform.right * movementSpeed * Time.deltaTime);
-        }
-
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
-        {
-            transform.position = transform.position + (transform.forward * movementSpeed * Time.deltaTime);
-        }
-
-        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
-        {
-            transform.position = transform.position + (-transform.forward * movementSpeed * Time.deltaTime);
-        }
+        
+            transform.position = transform.position + (transform.forward * joystickMovement.Vertical* movementSpeed * Time.deltaTime);
+        
 
         if (Input.GetKey(KeyCode.Q))
         {

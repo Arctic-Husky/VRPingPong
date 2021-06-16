@@ -37,11 +37,6 @@ public class XRNetworkPlayer : NetworkBehaviour
             MapPosition(rightXRMultiplayerHand, rightHandRig);
             MapPosition(XRMultiplayerHead, headRig);
         }
-        else
-        {
-            //gameObject.SetActive(false);
-            
-        }
     }
 
     private void MapPosition(Transform target, Transform rigTransform)

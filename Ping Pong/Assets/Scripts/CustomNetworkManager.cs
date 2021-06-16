@@ -5,9 +5,10 @@ using Mirror;
 using System;
 using System.Linq;
 using UnityEngine.SceneManagement;
+using UnityEngine.XR;
+using UnityEngine.XR.Interaction.Toolkit;
 
-
-    public class CustomNetworkManager : NetworkManager
+public class CustomNetworkManager : NetworkManager
     {
         public Transform leftRacketSpawn;
         public Transform rightRacketSpawn;
@@ -15,6 +16,24 @@ using UnityEngine.SceneManagement;
     public Transform XRRig;
     //GameObject XRRig;
     GameObject ball;
+    [Header("VR")]
+    [SerializeField] public bool StartWithVRMode = false;
+    [Header("IP para conexão")]
+    [SerializeField]
+    string connectionAdress = "localhost";
+    [Header("Referencias")]
+    [SerializeField]
+    PlayerLobbyManager playerManager;
+    private void Start()
+    {
+        networkAddress = connectionAdress;
+        //e se nao tiver no android
+        if (StartWithVRMode == true)
+        {
+          
+            StartClient();
+        }
+    }
 
     public override void OnServerAddPlayer(NetworkConnection conn)
         {

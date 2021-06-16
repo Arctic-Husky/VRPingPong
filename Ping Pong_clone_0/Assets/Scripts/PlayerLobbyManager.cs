@@ -11,12 +11,23 @@ public class PlayerLobbyManager : MonoBehaviour
     //[SerializeField] GameObject XRPlayer2;
     [SerializeField] GameObject EventSystem;
     [SerializeField] GameObject Spectator;
+    [Header("Referencia as Cameras")]
+    [SerializeField] GameObject menuCamera;
+    [SerializeField] CustomNetworkManager networkManager;
     bool jaLogado = false;
-
+    private void Start()
+    {
+        if (networkManager.StartWithVRMode)
+        {
+            EscolherJogador(1);
+            menuCamera.SetActive(false);
+        }
+    }
     public void EscolherJogador(int number)
     {
         if (number==1)
         {
+            print("escolhi o jogador");
             UIMenu.SetActive(false);
             //XRPlayer1.SetActive(true);
             XREventSystem.SetActive(true);
